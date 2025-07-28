@@ -14,19 +14,11 @@
 			remoteGlobalIDString = 89DDAD882E37CE1B0037618A;
 			remoteInfo = NowPlayingRNR;
 		};
-		89DDADA42E37CE3B0037618A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89DDAD812E37CE1B0037618A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 89DDAD882E37CE1B0037618A;
-			remoteInfo = NowPlayingRNR;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		89DDAD892E37CE1C0037618A /* NowPlayingRNR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NowPlayingRNR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DDAD992E37CE3A0037618A /* NowPlayingRNRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NowPlayingRNRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89DDADA32E37CE3B0037618A /* NowPlayingRNRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NowPlayingRNRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +30,6 @@
 		89DDAD9C2E37CE3A0037618A /* NowPlayingRNRTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = NowPlayingRNRTests;
-			sourceTree = "<group>";
-		};
-		89DDADA62E37CE3B0037618A /* NowPlayingRNRUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NowPlayingRNRUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89DDADA02E37CE3B0037618A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +57,6 @@
 			children = (
 				89DDAD8B2E37CE1C0037618A /* NowPlayingRNR */,
 				89DDAD9C2E37CE3A0037618A /* NowPlayingRNRTests */,
-				89DDADA62E37CE3B0037618A /* NowPlayingRNRUITests */,
 				89DDAD8A2E37CE1C0037618A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +66,6 @@
 			children = (
 				89DDAD892E37CE1C0037618A /* NowPlayingRNR.app */,
 				89DDAD992E37CE3A0037618A /* NowPlayingRNRTests.xctest */,
-				89DDADA32E37CE3B0037618A /* NowPlayingRNRUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +118,6 @@
 			productReference = 89DDAD992E37CE3A0037618A /* NowPlayingRNRTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		89DDADA22E37CE3B0037618A /* NowPlayingRNRUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89DDADB32E37CE3B0037618A /* Build configuration list for PBXNativeTarget "NowPlayingRNRUITests" */;
-			buildPhases = (
-				89DDAD9F2E37CE3B0037618A /* Sources */,
-				89DDADA02E37CE3B0037618A /* Frameworks */,
-				89DDADA12E37CE3B0037618A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89DDADA52E37CE3B0037618A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				89DDADA62E37CE3B0037618A /* NowPlayingRNRUITests */,
-			);
-			name = NowPlayingRNRUITests;
-			packageProductDependencies = (
-			);
-			productName = NowPlayingRNRUITests;
-			productReference = 89DDADA32E37CE3B0037618A /* NowPlayingRNRUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -178,10 +133,7 @@
 					};
 					89DDAD982E37CE3A0037618A = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 89DDAD882E37CE1B0037618A;
-					};
-					89DDADA22E37CE3B0037618A = {
-						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 						TestTargetID = 89DDAD882E37CE1B0037618A;
 					};
 				};
@@ -202,7 +154,6 @@
 			targets = (
 				89DDAD882E37CE1B0037618A /* NowPlayingRNR */,
 				89DDAD982E37CE3A0037618A /* NowPlayingRNRTests */,
-				89DDADA22E37CE3B0037618A /* NowPlayingRNRUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +167,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		89DDAD972E37CE3A0037618A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89DDADA12E37CE3B0037618A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +190,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89DDAD9F2E37CE3B0037618A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +197,6 @@
 			isa = PBXTargetDependency;
 			target = 89DDAD882E37CE1B0037618A /* NowPlayingRNR */;
 			targetProxy = 89DDAD9A2E37CE3A0037618A /* PBXContainerItemProxy */;
-		};
-		89DDADA52E37CE3B0037618A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 89DDAD882E37CE1B0037618A /* NowPlayingRNR */;
-			targetProxy = 89DDADA42E37CE3B0037618A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -450,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54LN227PKS;
@@ -459,6 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.redmond.me.NowPlayingRNRTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NowPlayingRNR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NowPlayingRNR";
@@ -469,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54LN227PKS;
@@ -481,40 +416,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NowPlayingRNR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NowPlayingRNR";
-			};
-			name = Release;
-		};
-		89DDADB42E37CE3B0037618A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 54LN227PKS;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.redmond.me.NowPlayingRNRUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NowPlayingRNR;
-			};
-			name = Debug;
-		};
-		89DDADB52E37CE3B0037618A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 54LN227PKS;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.redmond.me.NowPlayingRNRUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NowPlayingRNR;
 			};
 			name = Release;
 		};
@@ -544,15 +445,6 @@
 			buildConfigurations = (
 				89DDADB12E37CE3B0037618A /* Debug */,
 				89DDADB22E37CE3B0037618A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89DDADB32E37CE3B0037618A /* Build configuration list for PBXNativeTarget "NowPlayingRNRUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89DDADB42E37CE3B0037618A /* Debug */,
-				89DDADB52E37CE3B0037618A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
