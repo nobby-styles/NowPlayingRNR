@@ -1,3 +1,11 @@
+//
+//  FullScreenPlayerView.swift
+//  NowPlayingRNR
+//
+//  Created by Robert Redmond on 28/07/2025.
+//
+
+
 import SwiftUI
 
 // MARK: - Full Screen Player View
@@ -9,6 +17,8 @@ struct FullScreenPlayerView: View {
         GeometryReader { geometry in
             VStack(spacing: 0) {
                 // Top Bar
+
+                Spacer(minLength: 34)
                 topBar
                 
                 Spacer()
@@ -33,7 +43,7 @@ struct FullScreenPlayerView: View {
                 // Lyrics Section
                 lyricsSection
                 
-                Spacer(minLength: 34) // Account for home indicator
+                Spacer(minLength: 34) 
             }
             .padding(.horizontal, 24)
             .background {
@@ -201,7 +211,7 @@ struct FullScreenPlayerView: View {
             
             // Previous
             Button(action: viewModel.previousTrack) {
-                Image(systemName: "backward.fill")
+                Image(systemName: "backward.end.fill")
                     .font(.system(size: 28))
                     .foregroundColor(viewModel.hasPreviousTrack ? .white : .white.opacity(0.3))
             }
@@ -227,7 +237,7 @@ struct FullScreenPlayerView: View {
             
             // Next
             Button(action: viewModel.nextTrack) {
-                Image(systemName: "forward.fill")
+                Image(systemName: "forward.end.fill")
                     .font(.system(size: 28))
                     .foregroundColor(viewModel.hasNextTrack ? .white : .white.opacity(0.3))
             }

@@ -43,7 +43,7 @@ extension Track {
         Track(
             title: "Feeling Lonely", 
             artist: "Soy Pablo", 
-            albumArt: "album1", 
+            albumArt: "https://images.genius.com/4449e987acefed08f9d6d7c4b9c491ad.939x939x1.jpg",
             duration: 218,
             lyrics: [
                 "I woke up this morning",
@@ -59,7 +59,7 @@ extension Track {
         Track(
             title: "Sick Feeling", 
             artist: "Soy Pablo", 
-            albumArt: "album2", 
+            albumArt: "https://images.genius.com/4449e987acefed08f9d6d7c4b9c491ad.939x939x1.jpg",
             duration: 195,
             lyrics: [
                 "There's something inside me",
@@ -75,7 +75,7 @@ extension Track {
         Track(
             title: "EvryTime", 
             artist: "Soy Pablo", 
-            albumArt: "album3", 
+            albumArt: "https://images.genius.com/4449e987acefed08f9d6d7c4b9c491ad.939x939x1.jpg",
             duration: 167,
             lyrics: [
                 "Every time I see you",
@@ -91,7 +91,7 @@ extension Track {
         Track(
             title: "Summer Nights", 
             artist: "Soy Pablo", 
-            albumArt: "album4", 
+            albumArt: "https://images.genius.com/4449e987acefed08f9d6d7c4b9c491ad.939x939x1.jpg",
             duration: 201,
             lyrics: [
                 "Summer nights are calling",
@@ -107,7 +107,7 @@ extension Track {
         Track(
             title: "City Dreams", 
             artist: "Soy Pablo", 
-            albumArt: "album5", 
+            albumArt: "https://images.genius.com/4449e987acefed08f9d6d7c4b9c491ad.939x939x1.jpg",
             duration: 189,
             lyrics: [
                 "Walking through the city",
@@ -123,7 +123,7 @@ extension Track {
         Track(
             title: "Midnight Drive",
             artist: "Soy Pablo",
-            albumArt: "album6",
+            albumArt: "https://images.genius.com/4449e987acefed08f9d6d7c4b9c491ad.939x939x1.jpg",
             duration: 233,
             lyrics: [
                 "Driving through the midnight hour",

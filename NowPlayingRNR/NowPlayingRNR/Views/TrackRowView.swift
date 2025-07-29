@@ -1,5 +1,5 @@
 //
-//  TrackListView.swift
+//  TrackRowView.swift
 //  NowPlayingRNR
 //
 //  Created by Robert Redmond on 29/07/2025.
@@ -8,33 +8,6 @@
 
 import SwiftUI
 
-// MARK: - Track List View
-struct TrackListView: View {
-    @ObservedObject var viewModel: MusicPlayerViewModel
-    
-    var body: some View {
-        NavigationView {
-            List {
-                ForEach(Array(Track.mockTracks.enumerated()), id: \.element.id) { index, track in
-                    TrackRowView(
-                        track: track,
-                        isCurrentTrack: track.id == viewModel.currentTrack.id,
-                        isPlaying: viewModel.isPlaying && track.id == viewModel.currentTrack.id
-                    ) {
-                        // Select and play track
-                        viewModel.selectTrack(track)
-                        if !viewModel.isPlaying {
-                            viewModel.togglePlayPause()
-                        }
-                    }
-                }
-            }
-            .navigationTitle("Now Playing")
-            .background(.black)
-            .scrollContentBackground(.hidden)
-        }
-    }
-}
 
 // MARK: - Track Row View
 struct TrackRowView: View {
@@ -103,12 +76,3 @@ struct TrackRowView: View {
         return String(format: "%d:%02d", minutes, seconds)
     }
 }
-
-
-// MARK: - Preview
-#Preview("Standard") {
-    TrackListView(viewModel: MusicPlayerViewModel())
-        .preferredColorScheme(.dark)
-}
-
-

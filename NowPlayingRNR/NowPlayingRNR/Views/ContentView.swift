@@ -1,3 +1,11 @@
+//
+//  ContentView.swift
+//  NowPlayingRNR
+//
+//  Created by Robert Redmond on 28/07/2025.
+//
+
+
 import SwiftUI
 
 // MARK: - Main Content View
@@ -6,8 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            // Track Library Tab
-            TrackListView(viewModel: musicPlayerViewModel)
+            ArtistProfileWithTransition(viewModel: musicPlayerViewModel)
                 .tabItem {
                     Label("Library", systemImage: "music.note.list")
                 }
@@ -221,40 +228,10 @@ struct ContentView: View {
     }
 }
 
-// MARK: - Alternative Simple Content View
-struct SimpleContentView: View {
-    var body: some View {
-        ZStack {
-            // Main app content
-            ScrollView {
-                LazyVStack(spacing: 20) {
-                    ForEach(0..<20) { index in
-                        RoundedRectangle(cornerRadius: 12)
-                            .fill(.gray.opacity(0.2))
-                            .frame(height: 100)
-                            .overlay {
-                                Text("Content Item \(index + 1)")
-                                    .foregroundColor(.white)
-                            }
-                    }
-                }
-                .padding(.horizontal, 16)
-                .padding(.bottom, 80) // Account for mini player
-            }
-            .background(.black)
-            
-            // Music Player Overlay
-            MusicPlayerView()
-        }
-    }
-}
+
 
 // MARK: - Preview
 #Preview {
     ContentView()
 }
 
-#Preview("Simple") {
-    SimpleContentView()
-        .preferredColorScheme(.dark)
-}
